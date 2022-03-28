@@ -1,0 +1,55 @@
+{
+  "name": "xml-ui5",
+  "version": "1.0.1",
+  "description": "Check xml files by di-code-validation.xml",
+  "bin": "./bin/xml-ui5.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha 'test/**/*.js'",
+    "validate:eslint": "set -f; eslint $npm_package_config_eslintFiles",
+    "validate:prettier": "set -f; prettier --check $npm_package_config_prettierFiles",
+    "validate:test": "mocha -R progress 'test/**/*.js'",
+    "prettier": "set -f; prettier --write $npm_package_config_prettierFiles",
+    "validate": "    npm run validate:eslint && npm run validate:prettier && npm run validate:test\n",
+    "watch": "nodemon -e js,xml -x \"npm run validate\""
+  },
+  "keywords": [
+    "SAPUI5",
+    "OpenUI5",
+    "xml",
+    "fragment",
+    "view"
+  ],
+  "author": {
+    "name": "Norbert Volf",
+    "email": "norbert@volf.eu"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@prettier/plugin-xml": "^0.13.1",
+    "eslint": "^7.26.0",
+    "husky": "^6.0.0",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.7",
+    "prettier": "^1.19.1",
+    "simple-git": "^3.4.0",
+    "sinon": "^13.0.1"
+  },
+  "config": {
+    "eslintFiles": "./**/*.js",
+    "prettierFiles": "./**/*.js ./**/*.json .eslintrc public/.eslintrc .prettierrc ./**/*.html ./**/*.xml"
+  },
+  "dependencies": {
+    "@sap/di.code-validation.xml": "^1.1.28",
+    "chalk": "^5.0.1",
+    "fast-glob": "^3.2.11",
+    "lodash": "^4.17.21"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norbertvolf/xml-ui5.git"
+  }
+}

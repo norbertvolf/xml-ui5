@@ -1,0 +1,15 @@
+{
+    "tabWidth": 4,
+    "quoteProps": "consistent",
+    "printWidth": 120,
+    "endOfLine": "lf",
+    "xmlWhitespaceSensitivity": "ignore",
+    "overrides": [
+        {
+            "files": "package.json",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
