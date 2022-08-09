@@ -32,12 +32,12 @@
     "mocha": "^9.2.2",
     "nodemon": "^2.0.7",
     "prettier": "^1.19.1",
-    "simple-git": "^3.4.0",
+    "simple-git": "^3.6.0",
     "sinon": "^13.0.1"
   },
   "config": {
     "eslintFiles": "./**/*.js",
-    "prettierFiles": "./**/*.js ./**/*.json .eslintrc public/.eslintrc .prettierrc ./**/*.html ./**/*.xml"
+    "prettierFiles": "./**/*.js package.json .eslintrc public/.eslintrc .prettierrc ./**/*.html ./**/*.xml"
   },
   "dependencies": {
     "@sap/di.code-validation.xml": "^1.1.28",
